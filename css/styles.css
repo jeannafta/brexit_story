@@ -11410,7 +11410,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/brexit.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11635,7 +11635,7 @@ header.masthead .masthead-heading {
   }
   .timeline > li {
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
   .timeline > li .timeline-panel {
     float: left;
