@@ -1380,7 +1380,7 @@ progress {
 
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 25%;
   }
 
   .col-lg-5 {
@@ -1421,6 +1421,11 @@ progress {
   .col-lg-12 {
     flex: 0 0 auto;
     width: 100%;
+  }
+
+  .col-lg-13 {
+    flex: 0 0 auto;
+    width: 33.333333%;
   }
 
   .offset-lg-0 {
@@ -11301,7 +11306,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -11367,7 +11372,7 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: #FF0000;
 }
 
 @media (min-width: 992px) {
@@ -11635,7 +11640,7 @@ header.masthead .masthead-heading {
   }
   .timeline > li {
     min-height: 100px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   .timeline > li .timeline-panel {
     float: left;
@@ -11705,8 +11710,8 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
-  width: 14rem;
-  height: 14rem;
+  width: 10rem;
+  height: 10rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 .team-member h4, .team-member .h4 {
