@@ -18,6 +18,11 @@
 
         <!-- Counter -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>`
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </head>
 
     <body id="page-top">
@@ -49,7 +54,7 @@
             </div>
         </header>
         <!-- Background-->
-        <section class="page-section" id="Background">
+        <section class="page-section" id="Background" data-aos="fade-up" data-aos-delay="200">
             <div class="container">
                 <div class="text-center" style="padding-bottom:50px";>
                     <h2 class="section-heading text-uppercase">Historical background</h2>
@@ -159,7 +164,7 @@
             </div>
         </section>
         <!-- Introduction-->
-        <section class="page-section" id="Introduction">
+        <section class="page-section" id="Introduction" data-aos="fade-up" data-aos-delay="200">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Introduction</h2>
@@ -205,49 +210,71 @@
             </div>
         </section>
         <!-- Data -->
-        <section class="page-section" id="Data">
+       <section class="page-section" id="Data" data-aos="fade-up" data-aos-delay="200">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Data</h2>
+                    <h2 class="section-heading text-uppercase">About the Data</h2>
                     <p class="text-muted" style="text-align: justify;">
                     The project data comes from <b style="color:rgba(0, 0, 0, 0.9)"> 3 different sources: <br></b>
                     </p>
-                    <!-- 
-                    <ol class="text-muted" style="text-align: justify;">
-                        <li><b>Quotebank dataset</b>: 178 million unique speaker-attributed quotations that were extracted and attributed using Quobert, a language-agnostic framework for quotation attribution.</li>
-                        <li><b>Wikidata</b>: a free and open knowledge base that acts as central storage for the structured data of its Wikimedia sister projects (includes Wikipedia, Wiktionary, etc). </li>
-                        <li><b>FTSE100</b>: a share index of the 100 companies listed on the London Stock Exchange with (in principle) the highest market capitalisation. </li>
-                    </ol>
-                    -->
                     <div class="row text-center">
-                        <div class="col-md-4">
-                            <h6 class="my-3">Quotebank dataset</h6>
-                            <p class="text-muted">178 million unique speaker-attributed quotations that were extracted and attributed using Quobert, a language-agnostic framework for quotation attribution.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6 class="my-3">Wikidata</h6>
-                            <p class="text-muted">A free and open knowledge base that acts as central storage for the structured data of its Wikimedia sister projects (includes Wikipedia, Wiktionary, etc).</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6 class="my-3">FTSE100</h6>
-                            <p class="text-muted">A share index of the 100 companies listed on the London Stock Exchange with (in principle) the highest market capitalisation.</p>
-                        </div>
+                        <div class="col">
+                        <div class="counter">
+                    <br> 
+                    <a href="https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf">
+                        <img src="assets/Quotebank.svg" alt="Trulli" style="width:85%"></a>
+                     <p class="text-muted"> 178 million unique speaker-attributed quotations that were extracted and attributed using Quobert, a language-agnostic framework for quotation attribution.</p> 
                     </div>
+                        </div>
+                          <div class="col">
+                           <div class="counter">
+                    <a href="https://de.wikipedia.org/wiki/Wikidata">
+                        <img src="assets/Wikidata-logo-en.svg.png" alt="Trulli" style="width:32%"></a>
+                         <p class="text-muted"> A free and open knowledge base that acts as central storage for the structured data of its Wikimedia sister projects (includes Wikipedia, Wiktionary, etc). </p> <br> 
+                    </div>
+                          </div>
+                          <div class="col">
+                          <div class="counter">
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/FTSE_100_Index">
+                        <img src="assets/ftse.svg.png" alt="Trulli" style="width:25%"></a>
+                        <p class="text-muted"> <br> A share index of the 100 companies listed on the London Stock Exchange with (in principle) the highest market capitalisation.</p> <br>
+                    </div>
+            </div>
+            </div>
+
                     <p class="text-muted" style="text-align: justify;">
                     <br>
                     The number of citations available varies each year, depending on the number of articles mentioning Brexit. <br>
-                    INSERER PLOT ICI <br>
+                    <div data-aos="fade-up" data-aos-delay="200"
+                    style="text-align: center"><iframe width="100%" height="500" src="quotations_brexit.html"></iframe></div>
                     </p>
                     <h4>
-                        <div class="counter">
-                            <div class="counter-value" data-count="100">0</div>
-                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <div class="counter">
+                                    <div class="counter-value" data-count="100">0</div>
+                                </div>
+                                 <h4 class="my-3" style="color:orange">QUOTATIONS</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="counter">
+                                    <div class="counter-value" data-count="100">0</div>
+                                </div>
+                                <h4 class="my-3" style="color:red">SPEAKERS</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="counter">
+                                    <div class="counter-value" data-count="100">0</div>
+                                </div>
+                                <h4 class="my-3" style="color:green">COUNTRIES </h4>
+                            </div> 
                     </h4>
                 </div>
             </div>
         </section>
         <!-- Analysis & Discussions -->
-        <section class="page-section" id="Analysis">
+        <section class="page-section" id="Analysis" data-aos="fade-up" data-aos-delay="200">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Analysis & Discussions</h2>
@@ -264,17 +291,17 @@
                     <a id="arnaud_worldmap">Evolution of perception across countries </a> 
                 </h3>
 
-                <iframe width="100%" height="600" src="https://mapchartdashada.herokuapp.com"></iframe> 
+                <iframe data-aos="fade-up" data-aos-delay="200" width="100%" height="600" src="https://mapchartdashada.herokuapp.com"></iframe> 
 
                 <h3>
                     <a id="arnaud_occupation">Evolution of perception across sectors</a> 
                 </h3>
-                <iframe width="100%" height="600" src="https://occupationchartdashada.herokuapp.com"></iframe> 
+                <iframe data-aos="fade-up" data-aos-delay="200" width="100%" height="600" src="https://occupationchartdashada.herokuapp.com"></iframe> 
 
                 <h3>
                     <a id="arnaud_age">Age</a> 
                 </h3>
-                <iframe width="100%" height="600" src="https://agedashada.herokuapp.com/"></iframe> 
+                <iframe  data-aos="fade-up" data-aos-delay="200" width="100%" height="600" src="https://agedashada.herokuapp.com/"></iframe> 
 
                 <h3>
                     <a id="arnaud_stock">Stock</a> 
@@ -282,7 +309,7 @@
             </div>
         </section>
         <!-- Limitations -->
-        <section class="page-section" id="Limitations">
+        <section class="page-section" id="Limitations" data-aos="fade-up" data-aos-delay="200">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Limitations</h2>
@@ -291,7 +318,7 @@
             </div>
         </section>
         <!-- Clustering -->
-        <section class="page-section" id="Conclusion">
+        <section class="page-section" id="Conclusion" data-aos="fade-up" data-aos-delay="200">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Conclusion</h2>
