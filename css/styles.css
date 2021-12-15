@@ -238,7 +238,7 @@ sup {
 }
 
 a {
-  color: red;
+  color: rgba(173, 41, 41, 0.808);
   text-decoration: underline;
 }
 a:hover {
@@ -11844,3 +11844,6 @@ iframe{
   font-size: 3em;
 }
 
+.alinea{
+  text-indent: 40px;
+}
