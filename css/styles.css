@@ -238,7 +238,7 @@ sup {
 }
 
 a {
-  color: #0e2aca;
+  color: red;
   text-decoration: underline;
 }
 a:hover {
@@ -11800,6 +11800,12 @@ iframe{
   border-radius: 5px;
 }
 
+.counter1 {
+  background-color:white;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
 .count-title {
   font-size: 40px;
   font-weight: normal;
@@ -11822,3 +11828,19 @@ iframe{
   display: table;
   color: #4ad1e5;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+
