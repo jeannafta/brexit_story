@@ -362,36 +362,41 @@
                 <h3>
                     <a id="arnaud_occupation">Evolution of perception across sectors</a> 
                 </h3>
-                <p>
+                <p class="text-muted alinea" style="text-align: justify;">
                     Now that we have an overview, let's get to the heart of the matter with an analysis of the perception of Brexit by sector. 
                 Indeed, an analysis at the country level is not necessarily very instructive given the heterogeneity of opinions within the same country. 
                 It is impossible to capture all opinions, but by grouping them by sector we believe that the results will be more interpretable.
                 </p>
                 <iframe data-aos="fade-up" data-aos-delay="200" width="100%" height="620" src="https://occupationchartdashada.herokuapp.com"></iframe> 
-                <div style="text-align: center"><iframe width="100%" height="850" data-aos="fade-up" data-aos-delay="200" src="heat_map_sector.html"></iframe></div> 
-                <br> <br> <br>
+                <!-- div style="text-align: center"><iframe width="100%" height="850" data-aos="fade-up" data-aos-delay="200" src="heat_map_sector.html"></iframe></div> -->
+                
+                <p class="text-muted alinea" style="text-align: justify;">
+                to complete
+                </p>
                 <h3>
-                    <a id="arnaud_age">Demographics</a> 
+                <a id="arnaud_age">Demographics</a> 
                 </h3>
+                <p class="text-muted alinea" style="text-align: justify;"> 
                 Besides the profession and nationality of a person, it is interesting to investigate if differences in attributes such age and gender, 
                 lead to differences in opinions about Brexit. 
                 <br>
                 <i>Are older people more in favor of Brexit than younger people?</i>
+                </p>
                 <iframe  data-aos="fade-up" data-aos-delay="200" width="100%" height="500" src="https://agedashada.herokuapp.com/"></iframe>
                 
-                <div class="row text-center">
+                <!--<div class="row text-center">
                     <div class="col-md-6">
                         <div style="text-align: center"><iframe width="100%" height="400" scrolling="no" data-aos="fade-up" data-aos-delay="200" src="heat_map_age.html"></iframe></div>
                     </div>
                     <div class="col-md-6">
                         <div style="text-align: center"><iframe width="100%" height="400" scrolling="no" data-aos="fade-up" data-aos-delay="200" src="heat_map_age_UK.html"></iframe></div>
                     </div>
-                </div>
+                </div> -->
                 <p>
                     The p-value matrix shows that the difference across age groups is not significant at a worldwide scale. At the scale of the UK, 
                 </p>
                 <i>Is there a difference in perception of Brexit by people of different genders? </i>
-                <div style="text-align: center"><iframe width="100%" height="500" data-aos="fade-up" data-aos-delay="200" src="gender_bar.html"></iframe></div>>
+                <div style="text-align: center"><iframe width="100%" height="500" data-aos="fade-up" data-aos-delay="200" src="gender_bar.html"></iframe></div>
                 <p class="text-muted" style="text-align: justify;"> analyse </p> 
 
 
@@ -403,13 +408,11 @@
                     Indeed, we thought it would be interesting to go further in the analysis of the economic aspect to verify 
                     if there is really a negative impact of Brexit on the economy, 
                     or if it is only opinions of economists that are not consistent with reality. 
-                    For this we looked at the top 100 british stock auctions also known at FTSE100, and we tried to see if they were correlated with the Brexit. 
-                    More specifically, it is being investigated whether further turmoil due to Brexit would be correlated with a change in the stock market price.  
+                    For this we looked at the top 100 british stock exchange also known as FTSE100, and we tried to analyse if there was a correlation between the emergence of new events related to Brexit and movements in the stock exchange. 
                     </p>
                     
                     <iframe  data-aos="fade-up" data-aos-delay="200" width="100%" height="600" src="https://dashactionada.herokuapp.com"></iframe> 
                     <p class="text-muted alinea" style="text-align: justify;"> 
-                    The results are clear. 
                     When a correlation exists between the stock and brexit, and if it is significant, then this correlation is negative for most of the time (all except POLY in our example). 
                     This means that the Brexit makes investors reluctant, so in times of trouble investors prefer to sell their shares. 
                     </p>
@@ -421,16 +424,21 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Let's take a step back...</h2>
-                    <h5 class="text-muted">There are many reasons to why the analysis may not be fully valid. Some of the reasons are 
+                    <p class="text-muted alinea" style="text-align: justify;"> 
+                        There are many reasons to why the analysis may not be fully valid. Some of the reasons are 
                         listed below:
                         <p>
                             <li>
-                                The data iself: the data comes from a source of quotations.
+                                1) limitations related to the dataset 
+                                - quotes from quotebank about Brexit are a subset of what was said about it: having more quotations might change the results and analysis 
+                                - speaker uncertainty: speaker attribution might not be accurate.
+                                 A lot of information depends on the speaker, so a wrong attribution of the speaker has a direct impact on the interpretation of the data.
+                                 
+                                -  
                             </li>
                         </p>
-                        
-
-                    </h5>
+        
+                    </p>
                 </div>
             </div>
         </section>
