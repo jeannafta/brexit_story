@@ -327,7 +327,7 @@
                 Ajouter p-values !!
                 </p>
                 <h3>
-                    <a id="arnaud_worldmap">Evolution of perception across countries </a> 
+                    <a id="arnaud_worldmap">See EU later! </a> 
                 </h3>
                 <p class="text-muted alinea" style="text-align: justify;">
                     Brexit does not only involve the UK but it also impacts the relations it has with other countries specially EU countries. 
@@ -342,11 +342,13 @@
                     However, in the following year, the perception began to improve across Europe's largest economies, possibly due to due to the economic benefits of the relocation of British companies to other European countries. 
                     For example, in the case of France, <a href="https://www.euractiv.com/section/economy-jobs/news/brexit-to-bring-e150-billion-to-france-by-years-end/">financial firms moved around €150 billion from Britain to France.</a>
                     In 2020, the views towards Brexit where relatively neutral except for Germany that stood its ground.
+                    Italy went from being very negative about Brexit in 2016 to being positive about it in 2020. It is the country that switched its opinion the most. 
                 </p>
                     
                 <p class="text-muted alinea" style="text-align: justify;"> 
                 Even though the United States is not a direct neighbour of the UK, their opinion is also interesting as they have been in favour of the Brexit all along. 
                 This is not surprising either as the US benefits from the instability of Europe and the potential new trade agreements that would result from a new privileged relationship with the UK. 
+                It also interesting to look at Russia that has been negative towards Brexit all along. This is a surprising result and is not in line with our expectations that Russia would be neutral towards Brexit. 
                 </p>
                 <p class="text-muted" style="text-align: justify;"> 
                 However, previous hypotheses should be treated with care, since:
@@ -356,37 +358,74 @@
                     <li>Autre idée?</li>
                 </ul>
                 </p>
+                
                 <h3>
                     <a id="arnaud_occupation">Evolution of perception across sectors</a> 
                 </h3>
-                <iframe data-aos="fade-up" data-aos-delay="200" width="100%" height="600" src="https://occupationchartdashada.herokuapp.com"></iframe> 
-
+                <iframe data-aos="fade-up" data-aos-delay="200" width="100%" height="620" src="https://occupationchartdashada.herokuapp.com"></iframe> 
+                <div style="text-align: center"><iframe width="100%" height="850" data-aos="fade-up" data-aos-delay="200" src="heat_map_sector.html"></iframe></div> 
+                <br> <br> <br>
                 <h3>
-                    <a id="arnaud_age">Age</a> 
+                    <a id="arnaud_age">Demographics</a> 
                 </h3>
-                <iframe  data-aos="fade-up" data-aos-delay="200" width="100%" height="600" src="https://agedashada.herokuapp.com/"></iframe> 
+                Besides the profession and nationality of a person, it is interesting to investigate if differences in attributes such age and gender, 
+                lead to differences in opinions about Brexit. 
+                <br>
+                <i>Are older people more in favor of Brexit than younger people?</i>
+                <iframe  data-aos="fade-up" data-aos-delay="200" width="100%" height="500" src="https://agedashada.herokuapp.com/"></iframe>
                 
-                <h3>
-                    <a id="arnaud_age">Gender</a> 
-                </h3>
-                <p class="text-muted" style="text-align: justify;"> fait </p>
-                <div style="text-align: center"><iframe width="100%" height="500" data-aos="fade-up" data-aos-delay="200" src="gender_bar.html"></iframe></div>
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <p style="text-align: center"><iframe width="100%" height="400" scrolling="no" data-aos="fade-up" data-aos-delay="200" src="heat_map_age.html"></iframe></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p style="text-align: center"><iframe width="100%" height="400" scrolling="no" data-aos="fade-up" data-aos-delay="200" src="heat_map_age_UK.html"></iframe></p>
+                    </div>
+                </div>
+                <p>
+                    The p-value matrix shows that the difference across age groups is not significant at a worldwide scale. At the scale of the UK, 
+                </p>
+                <i>Is there a difference in perception of Brexit by people of different genders? </i>
+                <p style="text-align: center"><iframe width="100%" height="500" data-aos="fade-up" data-aos-delay="200" src="gender_bar.html"></iframe></p>
                 <p class="text-muted" style="text-align: justify;"> analyse </p> 
 
 
                 <h3>
-                    <a id="arnaud_stock">Stock</a> 
-                    <iframe  data-aos="fade-up" data-aos-delay="200" width="100%" height="600" src="https://dashactionada.herokuapp.com"></iframe> 
-                    
+                    <a id="arnaud_stock">Stock</a>
                 </h3>
+                    <p class="text-muted alinea" style="text-align: justify;"> 
+                    For our last analysis, we decided to focus on the most addressed aspect of brexit, i.e. the economic aspect. 
+                    Indeed, we thought it would be interesting to go further in the analysis of the economic aspect to verify 
+                    if there is really a negative impact of Brexit on the economy, 
+                    or if it is only opinions of economists that are not consistent with reality. 
+                    For this we looked at the top 100 british stock auctions also known at FTSE100, and we tried to see if they were correlated with the Brexit. 
+                    More specifically, it is being investigated whether further turmoil due to Brexit would be correlated with a change in the stock market price.  
+                    </p>
+                    
+                    <iframe  data-aos="fade-up" data-aos-delay="200" width="100%" height="600" src="https://dashactionada.herokuapp.com"></iframe> 
+                    <p class="text-muted alinea" style="text-align: justify;"> 
+                    The results are clear. 
+                    When a correlation exists between the stock and brexit, and if it is significant, then this correlation is negative for most of the time (all except POLY in our example). 
+                    This means that the Brexit makes investors reluctant, so in times of trouble investors prefer to sell their shares. 
+                    </p>
+                
             </div>
         </section>
         <!-- Limitations -->
         <section class="page-section" id="Limitations" data-aos="fade-up" data-aos-delay="200">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Limitations</h2>
-                    <h5 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</h5>
+                    <h2 class="section-heading text-uppercase">Let's take a step back...</h2>
+                    <h5 class="text-muted">There are many reasons to why the analysis may not be fully valid. Some of the reasons are 
+                        listed below:
+                        <p>
+                            <li>
+                                The data iself: the data comes from a source of quotations.
+                            </li>
+                        </p>
+                        
+
+                    </h5>
                 </div>
             </div>
         </section>
