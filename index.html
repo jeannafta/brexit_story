@@ -403,7 +403,7 @@
                     
                 </p>
                 <p class="text-muted alinea" style="text-align: justify;" data-aos="fade-up" data-aos-delay="200">
-                    On the other hand, the economy, a sector that took a serious hit from Brexit does not show significant differences with other sectors such as academia, Tech and insurance.
+                    On the other hand, the economy, a sector that took a serious hit from Brexit does not show significant differences with other sectors such as academia and Tech.
                     Which makes sense because these sectors also suffered from Brexit. 
                     When looking at the evolution of the perception of Brexit by the different sectors, it is interesting to notice that the some important sectors such as politics, economy, art and academia 
                     that are positive about Brexit became less and less positive about the exit decision throughout the years. 
@@ -413,15 +413,33 @@
                 <a id="arnaud_age" >What about demographics?</a> 
                 </h3>
                 <p class="text-muted alinea" style="text-align: justify;" data-aos="fade-up" data-aos-delay="200"> 
-                Besides the profession and nationality of a person, it is interesting to investigate if differences in attributes such age and gender, 
+                Besides the profession and nationality of a person, it is interesting to investigate if differences in attributes such age and gender 
                 lead to differences in opinions about Brexit. 
                 <br>
-                <i><b>Are older people more in favor of Brexit than younger people?</i></b>
+                <i><b>Are older people more in favor of Brexit than younger people, as commonly believed?</i></b>
                 </p>
                 <iframe  data-aos="fade-up" data-aos-delay="200" width="100%" height="500" src="https://agedashada.herokuapp.com/"></iframe>
                 <img src="assets/heat_map_age.svg" class="center" style="width:80%" data-aos="fade-up" data-aos-delay="200">
-                <p class="text-muted alinea" style="text-align: justify;" data-aos="fade-up" data-aos-delay="200">
-                    The p-value matrix shows that the difference across age groups is not significant at a worldwide scale. At the scale of the UK, 
+                <p class="text-muted alinea" style="text-align: justify;" data-aos="fade-up" data-aos-delay="200"> 
+                    Two analysis were performed for age category comparison: the first one considering all speakers, irrespective of their nationality, and a second analysis considering only speakers from UK.
+                    Additionaly, we performed the same analysis done with sectors, i.e. we verified that there exist a significant difference between each category (heat maps).
+                    As a first glance at the histograms, we were tempted to think that perception of Brexit does not depend on the age. 
+                    This is validated by the obtained p-values for the entire world. The p-values are high (greater than 0.05) except for the 90-100 age category.
+                    Actually, the data available for this age category is low and therefore is not truly representative of it. 
+                </p>
+                    <p class="text-muted alinea" style="text-align: justify;" data-aos="fade-up" data-aos-delay="200"> 
+                    On the contrary, the UK analysis shows some difference across age categories. For instance, the age category 20-30 is significantly different
+                    from the 70-80 age category. However, young people seem to be more supportive of Brexit than old people and this severly contradicts our previous expectations. It can be explained by the following reasons:
+                    <ul class="text-muted" style="text-align: justify;" data-aos="fade-up" data-aos-delay="200">
+                        <li>
+                            To begin with, the rumor might just be a rumor after all and is not necessarily true. But this is the easy way out. 
+                        </li>
+                        <li>
+                            This study only considers quotations that source from journals. So, this gives a voice to certain
+                    categories of society at the expense of others. Young people express themselves the most on social media such as Twitter and Facebook rather than in journals. 
+                        </li>
+                    </ul>
+                    
                     <br>
                     <br>
                     <i><b>Is there a difference in perception of Brexit by people of different genders? </i></b>
@@ -429,7 +447,7 @@
                 
                 <div style="text-align: center"><iframe width="100%" height="500" data-aos="fade-up" data-aos-delay="200" src="gender_bar.html"></iframe></div>
                 <p class="text-muted" style="text-align: justify;"> From the graph and a p-value of 0.105, it can be concluded that there is no significant difference between the gender
-                categories. 
+                categories. And therefore it can be concluded that the different genders do not perceive Brexit differently based on their gender. 
                 </p> 
 
 
@@ -444,7 +462,7 @@
                     For this we looked at the top 100 british stock exchange also known as FTSE100, and we tried to analyse if there was a correlation between the emergence of new events related to Brexit and movements in the stock exchange. 
                     </p>
                     
-                    <iframe  data-aos="fade-up" data-aos-delay="200" width="100%" height="500" src="https://dashappauction.herokuapp.com/"></iframe> 
+                    <iframe  data-aos="fade-up" data-aos-delay="200" width="100%" height="550" src="https://dashappauction.herokuapp.com/"></iframe> 
                     <p class="text-muted alinea" style="text-align: justify;" data-aos="fade-up" data-aos-delay="200"> 
                     For each stock, the absolute value of the derivate was computed (in other terms the slope), in addition to the derivate of the number of quotations, both with respect to time. 
                     The Pearson correlation was then computed between the two. The exchange stocks for which the absolute value of Pearson correlation was greater 0.15 were kept for the analysis. 
